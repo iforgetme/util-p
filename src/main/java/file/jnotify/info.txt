@@ -1,0 +1,30 @@
+使用此类库前 需要把jar包内的动态库加载到java.library.path
+windows下按x64或x86(32位)把动态库直接放入jdk的bin目录下
+linux下在etc下的profile文件下 export路径即可
+基于事件的  平台相关
+
+
+
+
+继承JNotifyAdapter类即可使用
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+url=jdbc:db2://172.16.87.198:60012/DB2GD
+username=db2gd
+password=db2gd
+driver_class=com.ibm.db2.jcc.DB2Driver
+
+
+
+

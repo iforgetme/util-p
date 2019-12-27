@@ -1,0 +1,77 @@
+
+
+加载类到ioc容器的几种方式
+1.扫描+注解  主要是加载自己写的类
+
+2.@bean   直接给bean注解
+
+3.@import  使用import注解  ImportSelector ImportBeanDefinitionRegistrar
+
+
+
+
+
+对象的生命周期
+  创建  初始化  销毁
+
+  几种方式
+
+  1.  @initMethod @destroyMethod 注解  或者xml中的配置
+  2.  实现 InitializingBean DisposableBean
+  3.  java api 自带的注解 @PostConstruct     @PreDestroy
+  4.  后置处理器BeanPostProcessor 初始化
+
+
+   属性赋值
+
+    @Value       直接放值     spEl表达式 #{}  @PropertySource 加载属性文件   通过${}取值
+
+
+
+   自动装配
+        1.@Autowired   @Primary 优先使用  @Qualifier 指定装配名称
+        2@Resource   默认按名称注入，@Primary无效 没有required   @Inject  @Primary有效  没有required
+        方法 属性 构造器 参数    @Bean+参数 自动注入  构造器+参数   当只有一个有参构造器时  会把参数自动注入
+    Aware接口     获取spring底层一些类    实现原理 通过后置处理器BeanPostProcessor
+    例如：ApplicationContextAware--> ApplicationContextAwareProcessor
+
+    @Profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
